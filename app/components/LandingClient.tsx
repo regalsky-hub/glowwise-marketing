@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 const APP_URL = 'https://glow-wise-kappa.vercel.app';
 import { Globe, Menu, X, Check, ArrowRight, Plus, Minus, User } from 'lucide-react';
 import { db } from '@/lib/firebase';
@@ -508,6 +509,7 @@ export default function LandingClient() {
             <button onClick={() => scrollTo('features')} className="nav-link">Features</button>
             <button onClick={() => scrollTo('pricing')} className="nav-link">Pricing</button>
             <button onClick={() => scrollTo('faq')} className="nav-link">FAQ</button>
+            <Link href="/journal" className="nav-link">Journal</Link>
           </div>
 
           <div className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '20px', position: 'relative' }}>
@@ -579,6 +581,7 @@ export default function LandingClient() {
               <button onClick={() => scrollTo('features')} className="nav-link" style={{ textAlign: 'left' }}>Features</button>
               <button onClick={() => scrollTo('pricing')} className="nav-link" style={{ textAlign: 'left' }}>Pricing</button>
               <button onClick={() => scrollTo('faq')} className="nav-link" style={{ textAlign: 'left' }}>FAQ</button>
+              <Link href="/journal" className="nav-link" style={{ textAlign: 'left' }}>Journal</Link>
               <div className="divider-line"></div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#A89968', fontSize: '13px' }}>
                 <Globe size={14} /> English (more languages coming soon)
@@ -668,7 +671,7 @@ export default function LandingClient() {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gridAutoRows: '1fr', alignItems: 'stretch', gap: '24px', maxWidth: '880px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '48px', maxWidth: '1080px', margin: '0 auto' }}>
             {[
               { num: '01', title: "Share how you're feeling", desc: 'A quick update on energy, sleep, stress and mood — the foundations of every insight that follows.' },
               { num: '02', title: 'Your coach learns you', desc: "The AI spots patterns you'd never catch alone — like how your sleep affects your skin." },
@@ -803,7 +806,7 @@ export default function LandingClient() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', maxWidth: '880px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gridAutoRows: '1fr', alignItems: 'stretch', gap: '24px', maxWidth: '880px', margin: '0 auto' }}>
 
             <div className="pricing-card">
               <div className="eyebrow" style={{ marginBottom: '20px' }}>Free</div>
@@ -1020,6 +1023,7 @@ export default function LandingClient() {
                     }}
                   >{link}</span>
                 ))}
+                <Link href="/journal" style={{ fontSize: '14px', color: '#D4E8DD', textDecoration: 'none' }}>Journal</Link>
               </div>
             </div>
 
