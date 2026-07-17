@@ -901,6 +901,7 @@ export default function LandingClient() {
                   cursor: 'pointer',
                   width: '100%',
                   transition: 'all 0.3s',
+                  marginTop: 'auto',
                 }}
                 onMouseEnter={(e) => { e.currentTarget.style.background = '#FFFFFF'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = '#FAF8F5'; e.currentTarget.style.transform = 'translateY(0)'; }}
