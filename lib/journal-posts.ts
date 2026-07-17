@@ -10,7 +10,7 @@ export interface JournalPost {
 
 export const journalPosts: JournalPost[] = [
   {
-    slug: 'why-is-my-hair-falling-out-hormones',
+    slug: 'hair-falling-out-hormones',
     title: 'Why Is My Hair Falling Out? The Hormone Connection Explained',
     excerpt:
       "Sudden shedding is unsettling — and often traced back to a hormonal shift 2-3 months earlier. Here's how to recognise the pattern and what it usually means.",
