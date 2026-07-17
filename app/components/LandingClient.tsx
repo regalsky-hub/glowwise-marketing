@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+const APP_URL = 'https://glow-wise-kappa.vercel.app';
 import { Globe, Menu, X, Check, ArrowRight, Plus, Minus, User } from 'lucide-react';
 import { db } from '@/lib/firebase';
 import { doc, setDoc } from 'firebase/firestore';
@@ -190,7 +190,6 @@ function AnimatedCoachDemo() {
 }
 
 export default function LandingClient() {
-  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -543,13 +542,13 @@ export default function LandingClient() {
               )}
             </div>
 
-            <button onClick={() => router.push('/login')} className="nav-link">Login</button>
-            <button onClick={() => router.push('/signup')} className="btn-primary" style={{ padding: '11px 22px', fontSize: '14px' }}>Start free</button>
+            <button onClick={() => (window.location.href = `${APP_URL}/login`)} className="nav-link">Login</button>
+            <button onClick={() => (window.location.href = `${APP_URL}/signup`)} className="btn-primary" style={{ padding: '11px 22px', fontSize: '14px' }}>Start free</button>
           </div>
 
           <div className="show-mobile" style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
             <button
-              onClick={() => router.push('/login')}
+              onClick={() => (window.location.href = `${APP_URL}/login`)}
               aria-label="Login"
               style={{
                 background: 'none', border: 'none', cursor: 'pointer',
@@ -584,8 +583,8 @@ export default function LandingClient() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#A89968', fontSize: '13px' }}>
                 <Globe size={14} /> English (more languages coming soon)
               </div>
-              <button onClick={() => router.push('/login')} className="nav-link" style={{ textAlign: 'left' }}>Login</button>
-              <button onClick={() => router.push('/signup')} className="btn-primary">Start free</button>
+              <button onClick={() => (window.location.href = `${APP_URL}/login`)} className="nav-link" style={{ textAlign: 'left' }}>Login</button>
+              <button onClick={() => (window.location.href = `${APP_URL}/signup`)} className="btn-primary">Start free</button>
             </div>
           </div>
         )}
@@ -615,7 +614,7 @@ export default function LandingClient() {
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '36px', flex: 1 }}>
-                <button onClick={() => router.push('/signup')} className="btn-primary">
+                <button onClick={() => (window.location.href = `${APP_URL}/signup`)} className="btn-primary">
                   Meet your wellness coach
                 </button>
                 <button className="btn-secondary" onClick={() => scrollTo('how')}>
@@ -844,7 +843,7 @@ export default function LandingClient() {
                 ))}
               </div>
 
-              <button onClick={() => router.push('/signup')} className="btn-secondary" style={{ width: '100%', justifyContent: 'center' }}>
+              <button onClick={() => (window.location.href = `${APP_URL}/signup`)} className="btn-secondary" style={{ width: '100%', justifyContent: 'center' }}>
                 Start free
               </button>
             </div>
@@ -889,7 +888,7 @@ export default function LandingClient() {
               </div>
 
               <button
-                onClick={() => router.push('/signup')}
+                onClick={() => (window.location.href = `${APP_URL}/signup`)}
                 style={{
                   background: '#FAF8F5',
                   color: '#557E64',
@@ -910,7 +909,7 @@ export default function LandingClient() {
               </button>
             </div>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '28px', fontSize: '13px', color: '#A89968', fontStyle: 'italic' }}>
+          <p style={{ textAlign: 'center', marginTop: '40px', paddingTop: '4px', position: 'relative', zIndex: 3, fontSize: '13px', color: '#A89968', fontStyle: 'italic' }}>
             Cancel anytime. Fair-use policy applies to unlimited access.
           </p>
         </div>
@@ -955,7 +954,7 @@ export default function LandingClient() {
           </p>
 
           <button
-            onClick={() => router.push('/signup')}
+            onClick={() => (window.location.href = `${APP_URL}/signup`)}
             style={{
               background: '#FAF8F5',
               color: '#557E64',
