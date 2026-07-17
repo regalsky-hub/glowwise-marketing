@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import LegalLayout from '../../components/LegalLayout';
 import { journalPosts } from '@/lib/journal-posts';
 
-const post = journalPosts.find((p) => p.slug === 'signs-of-hormonal-imbalance')!;
+const post = journalPosts.find((p) => p.slug === 'why-is-my-hair-falling-out-hormones')!;
 
 export const metadata: Metadata = {
   title: post.title,
@@ -34,7 +34,7 @@ const articleSchema = {
   },
 };
 
-export default function SignsOfHormonalImbalance() {
+export default function HairFallingOutHormones() {
   return (
     <>
       <script
@@ -43,113 +43,104 @@ export default function SignsOfHormonalImbalance() {
       />
       <LegalLayout eyebrow={`Journal · ${post.category}`} title={post.title} lastUpdated={post.publishedDate}>
         <p>
-          Fatigue that doesn't lift with sleep. A mood that swings for no obvious reason. Skin that breaks out on
-          a schedule. Hair that's suddenly shedding more than it used to. On their own, each of these can feel
-          like a small, disconnected annoyance — something to just push through. Together, they're often a
-          pattern, and that pattern is frequently hormonal.
+          Finding more hair than usual in the shower drain, on your pillow, or caught in your brush is one of
+          the more unsettling things a body can do — it feels sudden, and it's easy to assume something is
+          seriously wrong. Often, though, the explanation is a hormonal one, and it's more common — and more
+          delayed — than most people realise.
         </p>
 
         <div className="info-box">
-          <strong>The short version:</strong> hormonal imbalance doesn't usually announce itself with one clear
-          symptom. It shows up as a cluster of smaller shifts — in energy, mood, skin, hair, sleep, and
-          digestion — that are easy to dismiss individually but add up to something worth paying attention to.
+          <strong>The short version:</strong> a lot of hair shedding isn't happening for the reason you'd
+          expect. Hair loss linked to stress, illness, or hormonal shifts typically shows up 2–3 months
+          <em> after</em> the trigger, not during it — which is exactly why it feels so hard to explain.
         </div>
 
-        <h2>What &quot;hormonal imbalance&quot; actually means</h2>
+        <h2>The delay is the key detail</h2>
         <p>
-          Hormones are chemical messengers — produced by glands like the thyroid, adrenals, and ovaries or
-          testes — that regulate almost everything your body does: metabolism, mood, sleep, stress response,
-          reproductive cycles, and more. When one or more of these hormones is produced in too high or too low
-          a quantity, or when the timing of their normal rise and fall gets disrupted, the downstream effects
-          can touch nearly every system in your body. That's why hormonal symptoms rarely stay contained to one
-          area — a shift in cortisol can affect sleep, which affects mood, which affects appetite, and so on.
-        </p>
-
-        <h2>Common signs worth paying attention to</h2>
-        <p>
-          These are some of the most frequently reported signs of hormonal imbalance. Having one occasionally
-          is normal life. Noticing several of them together, recurring, or intensifying over time is what's
-          worth exploring further.
-        </p>
-
-        <h3>Energy and fatigue</h3>
-        <ul>
-          <li>Persistent tiredness that doesn't improve with a full night's sleep</li>
-          <li>A sharp energy crash at a specific time of day, most often mid-afternoon</li>
-          <li>Feeling &quot;wired but tired&quot; — unable to wind down despite exhaustion</li>
-        </ul>
-
-        <h3>Mood and mental clarity</h3>
-        <ul>
-          <li>Mood swings that feel disproportionate to what's actually happening</li>
-          <li>Increased anxiety or irritability, particularly around certain points in a monthly cycle</li>
-          <li>Brain fog — difficulty concentrating, or losing your train of thought more than usual</li>
-        </ul>
-
-        <h3>Skin and hair</h3>
-        <ul>
-          <li>Breakouts that cluster around the same phase of your cycle each month</li>
-          <li>Increased hair shedding, often noticed 2–3 months after a period of stress or illness</li>
-          <li>Changes in skin oiliness or dryness that don't match the season or your usual routine</li>
-        </ul>
-
-        <h3>Sleep and body regulation</h3>
-        <ul>
-          <li>Difficulty falling or staying asleep, especially if this is a new pattern</li>
-          <li>Night sweats or feeling too warm at night without an obvious cause</li>
-          <li>Unexplained changes in weight, appetite, or digestion</li>
-        </ul>
-
-        <h2>Why these symptoms are so easy to miss</h2>
-        <p>
-          Most of these signs develop gradually, and each one in isolation has a dozen possible explanations —
-          a bad week, a poor night's sleep, stress at work. That's precisely what makes hormonal patterns hard
-          to self-diagnose: the picture only becomes clear when you look at several signals together, over
-          time, rather than any single symptom on its own. A breakout the week before your period might seem
-          unremarkable in the moment; noticing it happens nearly every month is a different kind of information
-          entirely.
-        </p>
-
-        <h2>What tends to influence hormonal balance</h2>
-        <p>
-          Hormonal fluctuation is a normal, expected part of the menstrual cycle, aging, and daily life —
-          not something inherently &quot;wrong.&quot; That said, a number of everyday factors can push things
-          further out of balance than they'd otherwise be:
-        </p>
-        <ul>
-          <li><strong>Sleep quality and consistency</strong> — irregular sleep disrupts cortisol and melatonin rhythms</li>
-          <li><strong>Chronic stress</strong> — sustained high cortisol can suppress other hormone production</li>
-          <li><strong>Diet and blood sugar stability</strong> — frequent blood sugar spikes affect insulin, which interacts with other hormones</li>
-          <li><strong>Life stage transitions</strong> — puberty, pregnancy, postpartum, and perimenopause all involve significant hormonal shifts</li>
-          <li><strong>Underlying conditions</strong> — thyroid disorders and PCOS are common, often under-diagnosed causes of ongoing symptoms</li>
-        </ul>
-
-        <h2>Tracking the pattern is the useful part</h2>
-        <p>
-          Because hormonal symptoms are cumulative and cyclical rather than sudden, the single most useful
-          thing you can do — before or alongside seeing a doctor — is start noticing the pattern rather than
-          just the individual bad days. When did the fatigue start? Does the skin change line up with a
-          particular week of your cycle? Did the hair shedding follow a stressful period a few months back?
+          Each hair on your head cycles through phases: a long growth phase, a short transition phase, and a
+          resting phase before it eventually sheds. Under normal circumstances, this is staggered across your
+          scalp so shedding is barely noticeable. A significant stressor — physical or hormonal — can push an
+          unusually large number of hairs into that resting phase all at once. Those hairs don't fall out
+          immediately; they sit for roughly two to three months before shedding together. This is called
+          telogen effluvium, and it's the most common reason for a sudden, noticeable increase in hair loss
+          that isn't related to genetics.
         </p>
         <p>
-          This is exactly the gap GlowWise was built to close. Rather than treating each symptom as a separate,
-          disconnected complaint, GlowWise's AI Coach learns from your daily check-ins — energy, sleep, stress,
-          skin, hair — and helps surface the patterns connecting them, so you're not left trying to piece it
-          together from memory alone.
+          That delay is exactly why the shedding can feel so disconnected from any obvious cause — the actual
+          trigger, whatever it was, is usually a couple of months in the past by the time you notice hair in
+          the drain.
+        </p>
+
+        <h2>Common hormonal triggers</h2>
+        <ul>
+          <li>
+            <strong>Postpartum hair loss</strong> — a well-documented drop in estrogen after childbirth, often
+            noticed around three months postpartum
+          </li>
+          <li>
+            <strong>Thyroid imbalance</strong> — both an underactive and overactive thyroid can cause diffuse
+            shedding
+          </li>
+          <li>
+            <strong>Stopping or starting hormonal birth control</strong> — the shift in hormone levels can
+            trigger a shedding phase
+          </li>
+          <li>
+            <strong>Perimenopause and menopause</strong> — declining estrogen and progesterone can affect hair
+            density over time
+          </li>
+          <li>
+            <strong>PCOS</strong> — often associated with androgen-related thinning, particularly along the
+            part line and crown
+          </li>
+          <li>
+            <strong>Chronic stress</strong> — sustained high cortisol is one of the most common non-hormonal
+            (but hormone-adjacent) triggers
+          </li>
+        </ul>
+
+        <h2>How to tell if it's a hormonal pattern</h2>
+        <p>
+          A few characteristics tend to distinguish hormonally-driven shedding from other causes of hair loss:
+        </p>
+        <ul>
+          <li>It's diffuse — spread across the whole scalp — rather than in a specific patch</li>
+          <li>It's a change from your usual baseline, not a lifelong pattern</li>
+          <li>You can often trace it back to a stressful, illness, or hormonally significant period roughly 2–3 months earlier</li>
+          <li>It tends to be temporary — most telogen effluvium resolves within 6–12 months once the underlying trigger is addressed</li>
+        </ul>
+        <p>
+          This is different from androgenetic alopecia (pattern hair loss), which develops gradually over
+          years, tends to follow a specific pattern (crown or part-line thinning), and is genetic rather than
+          triggered by a single event.
+        </p>
+
+        <h2>Why the two- to three-month gap makes self-diagnosis so hard</h2>
+        <p>
+          If you're trying to figure out what caused a shedding phase, the natural instinct is to look at what's
+          happening <em>right now</em> — but the more useful question is usually &quot;what was going on with my
+          sleep, stress, or health about three months ago?&quot; Without a record of that period, it's genuinely
+          difficult to reconstruct. This is exactly the kind of gap that daily tracking closes — a log of stress,
+          sleep, and any health changes gives you something to look back on when a delayed symptom like this
+          shows up.
+        </p>
+        <p>
+          GlowWise's daily check-ins and photo tracking are built for exactly this — not just recording how you
+          feel today, but building a timeline your AI Coach can help you look back through when something like
+          hair shedding shows up weeks or months later.
         </p>
 
         <h2>When to see a doctor</h2>
         <p>
-          Tracking your own patterns is genuinely useful, but it isn't a substitute for medical care. It's
-          worth booking a GP appointment if symptoms are persistent, worsening, or interfering with daily life
-          — particularly for significant changes in your menstrual cycle, sudden or severe hair loss, unexplained
-          weight changes, or symptoms alongside a family history of thyroid or metabolic conditions. A doctor
-          can run bloodwork to check hormone levels directly, which self-tracking alone can't replace.
+          Most telogen effluvium resolves on its own once the trigger passes. That said, it's worth seeing a
+          doctor if shedding is severe, doesn't improve after several months, is accompanied by scalp itching,
+          redness, or visible bald patches, or if you suspect an underlying condition like a thyroid disorder
+          or PCOS — these are worth diagnosing properly with bloodwork rather than guessing from symptoms alone.
         </p>
 
         <div className="info-box">
-          Want help spotting your own patterns? <a href="https://glow-wise-kappa.vercel.app/signup">Start free with GlowWise</a> — two questions a
-          day to your AI Coach, no credit card required.
+          Want to build a timeline you can actually look back on? <a href="https://glow-wise-kappa.vercel.app/signup">Start free with GlowWise</a> — daily
+          check-ins and optional photo tracking, two questions a day to your AI Coach, no credit card required.
         </div>
       </LegalLayout>
     </>
