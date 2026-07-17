@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import LegalLayout from '../../components/LegalLayout';
 import { journalPosts } from '@/lib/journal-posts';
 
-const post = journalPosts.find((p) => p.slug === 'why-is-my-hair-falling-out-hormones')!;
+const post = journalPosts.find((p) => p.slug === 'hair-falling-out-hormones')!;
 
 export const metadata: Metadata = {
   title: post.title,
