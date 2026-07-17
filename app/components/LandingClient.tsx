@@ -381,8 +381,8 @@ export default function LandingClient() {
           transition: all 0.3s;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
-          height: 100%;
+          justify-content: flex-start;
+          min-height: 620px;
         }
 
         .pricing-card.featured {
@@ -843,7 +843,7 @@ export default function LandingClient() {
                 ))}
               </div>
 
-              <button onClick={() => (window.location.href = `${APP_URL}/signup`)} className="btn-secondary" style={{ width: '100%', justifyContent: 'center' }}>
+              <button onClick={() => (window.location.href = `${APP_URL}/signup`)} className="btn-secondary" style={{ width: '100%', justifyContent: 'center', marginTop: 'auto' }}>
                 Start free
               </button>
             </div>
