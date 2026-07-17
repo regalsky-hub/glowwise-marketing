@@ -668,7 +668,7 @@ export default function LandingClient() {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '48px', maxWidth: '1080px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gridAutoRows: '1fr', alignItems: 'stretch', gap: '24px', maxWidth: '880px', margin: '0 auto' }}>
             {[
               { num: '01', title: "Share how you're feeling", desc: 'A quick update on energy, sleep, stress and mood — the foundations of every insight that follows.' },
               { num: '02', title: 'Your coach learns you', desc: "The AI spots patterns you'd never catch alone — like how your sleep affects your skin." },
